@@ -1,9 +1,19 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap'
+import {
+	Collapse,
+	Navbar,
+	NavbarToggler,
+	NavbarBrand,
+	Nav,
+	NavItem,
+	NavLink,
+} from 'reactstrap'
 
-export default class Example extends React.Component {
+import './MainNavbar.css'
+
+class MainNavbar extends React.Component {
 	constructor(props) {
 		super(props)
 
@@ -43,3 +53,5 @@ export default class Example extends React.Component {
 		)
 	}
 }
+
+export default MainNavbar
