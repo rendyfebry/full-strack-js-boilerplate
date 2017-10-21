@@ -33,18 +33,15 @@ class MainNavbar extends React.Component {
 		return (
 			<div>
 				<Navbar color="faded" light expand="md">
-					<NavbarBrand href="/">React App</NavbarBrand>
+					<Link to="/" href="/" className="navbar-brand">React App</Link>
 					<NavbarToggler onClick={this.toggle} />
 					<Collapse isOpen={this.state.isOpen} navbar>
 						<Nav className="ml-auto" navbar>
 							<NavItem>
-								<Link to="/" href="/" className="nav-link">Home</Link>
-							</NavItem>
-							<NavItem>
 								<Link to="/login" href="/login" className="nav-link">Login</Link>
 							</NavItem>
 							<NavItem>
-								<NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
+								<NavLink href="https://github.com/rendyfebry/fullstack-js-boilerplate">Github</NavLink>
 							</NavItem>
 						</Nav>
 					</Collapse>
