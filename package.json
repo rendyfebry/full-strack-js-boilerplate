@@ -2,15 +2,32 @@
   "name": "full-stack-js-boilerplate",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "8.7.x",
+    "yarn": "1.2.1"
+  },
   "dependencies": {
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14"
   },
   "scripts": {
     "start": "react-scripts start",
+    "server:dev": "nodemon -e js,jsx --ignore src --ignore lib --ignore build --exec babel-node server/index.js",
+    "prod:build": "rimraf lib build && react-scripts build",
+    "prod:start": "cross-env NODE_ENV=production heroku local",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "yarn prod:build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "concurrently": "^3.5.0",
+    "cross-env": "^5.1.0",
+    "rimraf": "^2.6.2"
   }
 }
