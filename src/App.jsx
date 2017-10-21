@@ -1,19 +1,29 @@
 import React from 'react'
-import logo from './logo.svg'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.css'
+
+import MainNavbar from './components/MainNavbar'
+import HomePage from './pages/HomePage'
+import LoginPage from './pages/LoginPage'
+
 import './App.css'
 
-function App() {
-	return (
+const PageRouter = () => (
+	<main>
+		<Switch>
+			<Route path="/" exact component={HomePage} />
+			<Route path="/login" component={LoginPage} />
+		</Switch>
+	</main>
+)
+
+const App = () => (
+	<BrowserRouter>
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<h1 className="App-title">Welcome to React</h1>
-			</header>
-			<p className="App-intro">
-				To get started, edit <code>src/App.js</code> and save to reload.
-			</p>
+			<MainNavbar />
+			<PageRouter />
 		</div>
-	)
-}
+	</BrowserRouter>
+)
 
 export default App
