@@ -10,7 +10,7 @@ class HomePage extends React.PureComponent {
 					<h1 className="App-title">Welcome to React</h1>
 				</header>
 				<p className="App-intro">
-					You're currently on HomePage
+					You're currently on Home Page
 				</p>
 			</div>
 		)

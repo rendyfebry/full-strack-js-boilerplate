@@ -10,7 +10,7 @@ class LoginPage extends React.PureComponent {
 					<h1 className="App-title">Welcome to React </h1>
 				</header>
 				<p className="App-intro">
-					You're currently on Login Page
+					You're currently on Register Page
 				</p>
 			</div>
 		)
