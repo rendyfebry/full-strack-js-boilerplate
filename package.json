@@ -15,8 +15,9 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.14",
-    "reactstrap": "^5.0.0-alpha.3"
+    "react-scripts": "1.1.1",
+    "reactstrap": "^5.0.0-alpha.3",
+    "snyk": "^1.83.0"
   },
   "scripts": {
     "start": "concurrently \"yarn server:dev\" \"yarn client:dev\"",
@@ -28,7 +29,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "heroku-postbuild": "yarn prod:build",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -41,5 +44,6 @@
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0",
     "rimraf": "^2.6.2"
-  }
+  },
+  "snyk": true
 }
