@@ -13,10 +13,10 @@
     "jquery": "^3.2.1",
     "popper.js": "^1.12.5",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react-dom": "^16.0.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "2.0.0",
-    "reactstrap": "^5.0.0-alpha.3"
+    "reactstrap": "^5.0.0"
   },
   "scripts": {
     "start": "concurrently \"yarn server:dev\" \"yarn client:dev\"",
