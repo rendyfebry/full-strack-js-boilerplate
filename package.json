@@ -10,7 +10,7 @@
     "bootstrap": "4.0.0-beta",
     "compression": "^1.7.1",
     "express": "^4.16.2",
-    "jquery": "^3.2.1",
+    "jquery": "^3.4.0",
     "popper.js": "^1.12.5",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
